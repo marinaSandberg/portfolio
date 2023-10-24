@@ -3,6 +3,8 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    margin-block: 0;
+    margin-inline: 0;
 
     /*variables*/
     --firstcolor:#D0E3C4;
@@ -37,8 +39,8 @@ h2 {
 
 h3 {
     font-size: 1rem;
-    padding-bottom: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -126,7 +128,7 @@ p {
 }
 
 /*-----------------------------------main part--------------------------------*/
-section {
+#roles, #about, #cv, #contact {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
@@ -179,6 +181,7 @@ section {
 #cv {
     grid-template-columns: 50vw 50vw;
     justify-items: left;
+    align-items: start;
 }
 
 #cv-tittle {
@@ -192,7 +195,7 @@ section {
 }
 
 #cv-item2 {
-    grid-row: 3;
+    grid-row: 5;
     grid-column: 1;
 }
 
@@ -202,57 +205,44 @@ section {
 }
 
 #cv-item4 {
-    grid-row: 1/ span 3;
+    grid-row: 2/ span 3 ;
     grid-column: 2;
 }
 
 #cv-item5 {
-    grid-row: 5;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#cv-item6 {
+    grid-row: 4;
     grid-column: 2;
 }
 
-#awards {
+/*EDUCATION--AWARDS--LANGUAGES--ACTIVITIES*/
+#education, #awards, #languages, #activities {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 10vw 30vw;
-    gap: 10vw;
+    row-gap: 2vw;
     justify-items: left;
 }
 
-#award-date1 {
-    grid-row: 1;
-    grid-column: 1;
+#education a {
+    color: black;
 }
 
-#award1 {
-    grid-row: 1;
-    grid-column: 2;
+#education a:hover {
+    color: var(--thirdcolor);
+    font-weight: bolder;
 }
 
-#award-date2 {
-    grid-row: 2;
-    grid-column: 1;
-}
-
-#award2 {
-    grid-row: 2;
-    grid-column: 2;
-}
-
-#award-date3 {
-    grid-row: 3;
-    grid-column: 1;
-}
-
-#award3 {
-    grid-row: 3;
-    grid-column: 2;
-}
-
+/*SOFTWARE--CODING*/
 .light-grey {
     background-color:#f1f1f1;
     position: relative;
-    top: 3px;
+    width: 200px;
+    top: 8px;
 }
 
 .round {
@@ -264,19 +254,231 @@ section {
     padding: 3px;
 }
 
+#software, #coding {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 2vw;
+    justify-items: left;
+}
+
+/*-----------------------------------portfolio----------------------------------*/
 #portfolio {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    place-items: center;
+    margin-top: 4vw;
 }
 
-.projects {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    transition: all 0.5;
+#portfolio > h2 {
+    grid-row: 1;
+    grid-column: 1/ span 4;
 }
 
+#portfolio > h3 {
+    grid-row: 2;
+    grid-column: 1/ span 4;
+}
+
+#kringlan {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#accelerator {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#ahouse {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#pegasus {
+    grid-row: 3;
+    grid-column: 4;
+}
+
+#polhemsgatan {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#ringvagen {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#sagen {
+    grid-row: 4;
+    grid-column: 3;
+}
+
+#flygaren {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+#inrehamnen {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+#kabeln {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+#spannmalet {
+    grid-row: 5;
+    grid-column: 3;
+}
+
+#frosakull {
+    grid-row: 5;
+    grid-column: 4;
+}
+
+/*Responsiveness*/
+@media (max-width:900px) {
+    #portfolio {
+        grid-template-columns: auto auto auto;
+    }
+    
+    #portfolio > h2 {
+        grid-column: 1/ span 3;
+    }
+    
+    #portfolio > h3 {
+        grid-column: 1/ span 3;
+    }
+    
+    #kringlan {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    #accelerator {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+    #ahouse {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    
+    #pegasus {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #polhemsgatan {
+        grid-row: 4;
+        grid-column: 2;
+    }
+    
+    #ringvagen {
+        grid-row: 4;
+        grid-column: 3;
+    }
+    
+    #sagen {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #flygaren {
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+    #inrehamnen {
+        grid-row: 5;
+        grid-column: 3;
+    }
+    
+    #kabeln {
+        grid-row: 6;
+        grid-column: 1;
+    }
+    
+    #spannmalet {
+        grid-row: 6;
+        grid-column: 2;
+    }
+    
+    #frosakull {
+        grid-row: 6;
+        grid-column: 3;
+    }
+}
+
+@media (max-width:650px) {
+    #portfolio {
+        grid-template-columns: auto auto;
+    }
+    
+    #portfolio > h2 {
+        grid-column: 1/ span 2;
+    }
+    
+    #portfolio > h3 {
+        grid-column: 1/ span 2;
+    }
+    
+    #ahouse {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #pegasus {
+        grid-row: 4;
+        grid-column: 2;
+    }
+    
+    #polhemsgatan {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #ringvagen {
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+    #sagen {
+        grid-row: 6;
+        grid-column: 1;
+    }
+    
+    #flygaren {
+        grid-row: 6;
+        grid-column: 2;
+    }
+    
+    #inrehamnen {
+        grid-row: 7;
+        grid-column: 1;
+    }
+    
+    #kabeln {
+        grid-row: 7;
+        grid-column: 2;
+    }
+    
+    #spannmalet {
+        grid-row: 8;
+        grid-column: 1;
+    }
+    
+    #frosakull {
+        grid-row: 8;
+        grid-column: 2;
+    }
+}
 .project-image img {
     width: 12rem;
     height: 12rem;
@@ -296,7 +498,7 @@ section {
     border: solid var(--thirdcolor);
 }
 
-/* #sitefooter */
+/*-----------------------------------portfolio----------------------------------*/
 footer, #contact div {
     display: flex;
     flex-direction: column;
