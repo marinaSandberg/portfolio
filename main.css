@@ -10,6 +10,7 @@
     --firstcolor:#D0E3C4;
     --secondcolor:#503047;
     --thirdcolor:#C05746;
+    --forthcolor:#e2887b76;
 }
 
 html {
@@ -56,7 +57,7 @@ p {
     padding: 0.8rem;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto;
+    grid-template-columns: 20vw 20vw auto 20vw 20vw;
     place-items: center;
 }
 #item1 {
@@ -157,6 +158,8 @@ p {
 /*------------------------------------about-----------------------------------*/
 
 #about {
+    margin-left: 5vw;
+    margin-right: 5vw;
     justify-items: left;
 }
 .about {
@@ -170,6 +173,7 @@ p {
 /*------------------------------------cv--------------------------------------*/
 
 #cv {
+    margin-left: 5vw;
     grid-template-columns: 50vw auto;
     justify-items: left;
     align-items: start;
@@ -544,6 +548,11 @@ p {
     grid-template-rows: 6vw auto;
     grid-template-columns: auto;
 }
+#dev1:hover, #dev2:hover, #dev3:hover, #dev4:hover, #dev5:hover, #dev6:hover, #dev7:hover, #dev8:hover {
+    background-color: var(--forthcolor);
+    border-radius: 5px;
+}
+
 /*Responsiveness*/
 @media (max-width:1100px) {
     #dev1 {
