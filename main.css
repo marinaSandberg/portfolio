@@ -20,7 +20,6 @@ body {
     margin: 1rem;
     font-family: existence, monospace;
     background-color: var(--firstcolor);
-    min-height: 100vh;
 }
 
 main {
@@ -43,8 +42,13 @@ h3 {
     padding-bottom: 20px;
 }
 
+h4 {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
 p {
-    font-size: 1vw;
+    font-size: 0.7rem;
 }
 
 /*---------------------------------header menu--------------------------------*/
@@ -55,40 +59,33 @@ p {
     grid-template-columns: auto;
     place-items: center;
 }
-
 #item1 {
     grid-row: 1;
     grid-column: 1;
 }
-
 #item2 {
     grid-row: 1;
     grid-column: 2;
 }
-
 #sitelogo {
     display: grid;
     height: 6rem;
     grid-row: 1;
     grid-column: 3;
 }
-
 #item3 {
     grid-row: 1;
     grid-column: 4;
 }
-
 #item4 {
     grid-row: 1;
     grid-column: 5;
 }
-
 .nav-item a {
     padding: 0.5rem;
     font-size: 1vw;
     color: var(--secondcolor);
 }
-
 .nav-item a:hover {
     color: var(--thirdcolor);
     font-weight: bolder;
@@ -140,22 +137,18 @@ p {
 #roles h1:hover {
     color: var(--thirdcolor);
 }
-
 .part {
     font-size: 1vw;
 }
-
 #role-item1 {
     grid-row: 1;
     grid-column: 1;
 }
-
 #home-image {
     max-height: 70vw;
     grid-row: 1;
     grid-column: 2;
 }
-
 #role-item2 {
     grid-row: 1;
     grid-column: 3;
@@ -166,11 +159,9 @@ p {
 #about {
     justify-items: left;
 }
-
 .about {
     padding-top: 3vw;
 }
-
 .about p {
     font-size: 0.9rem;
     line-height: 1.5rem;
@@ -179,41 +170,34 @@ p {
 /*------------------------------------cv--------------------------------------*/
 
 #cv {
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50vw auto;
     justify-items: left;
     align-items: start;
 }
-
 #cv-tittle {
     grid-row: 1;
     grid-column: 1;
 }
-
 #cv-item1 {
     grid-row: 2;
     grid-column: 1;
 }
-
 #cv-item2 {
     grid-row: 5;
     grid-column: 1;
 }
-
 #cv-item3 {
     grid-row: 4;
     grid-column: 1;
 }
-
 #cv-item4 {
     grid-row: 2/ span 3 ;
     grid-column: 2;
 }
-
 #cv-item5 {
     grid-row: 3;
     grid-column: 1;
 }
-
 #cv-item6 {
     grid-row: 4;
     grid-column: 2;
@@ -227,11 +211,9 @@ p {
     row-gap: 2vw;
     justify-items: left;
 }
-
 #education a {
     color: black;
 }
-
 #education a:hover {
     color: var(--thirdcolor);
     font-weight: bolder;
@@ -244,16 +226,13 @@ p {
     width: 200px;
     top: 8px;
 }
-
 .round {
     border-radius:8px;
 }
-
 .progress-bar {
     background-color: var(--thirdcolor);
     padding: 3px;
 }
-
 #software, #coding {
     display: grid;
     grid-template-rows: auto;
@@ -266,218 +245,193 @@ p {
 #portfolio {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: auto;
     place-items: center;
     margin-top: 4vw;
 }
-
-#portfolio > h2 {
+#portfolio h2 {
     grid-row: 1;
-    grid-column: 1/ span 4;
+    grid-column: 1;
+}
+#architecture {
+    grid-row: 2;
+    grid-column: 1;
+}
+#development {
+    grid-row: 4;
+    grid-column: 1;
+    margin-top: 2rem;
+    
 }
 
-#portfolio > h3 {
-    grid-row: 2;
-    grid-column: 1/ span 4;
+/*ARCHITECTURE*/
+#archprojects {
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    gap: 7vw;
 }
 
 #kringlan {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1;
 }
-
 #accelerator {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 2;
 }
-
 #ahouse {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 3;
 }
-
 #pegasus {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 4;
 }
-
 #polhemsgatan {
-    grid-row: 4;
+    grid-row: 2;
     grid-column: 1;
 }
-
 #ringvagen {
-    grid-row: 4;
+    grid-row: 2;
     grid-column: 2;
 }
-
 #sagen {
-    grid-row: 4;
+    grid-row: 2;
     grid-column: 3;
 }
-
 #flygaren {
-    grid-row: 4;
+    grid-row: 2;
     grid-column: 4;
 }
-
 #inrehamnen {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 1;
 }
-
 #kabeln {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 2;
 }
-
 #spannmalet {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 3;
 }
-
 #frosakull {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 4;
 }
 
 /*Responsiveness*/
 @media (max-width:900px) {
-    #portfolio {
+    #archprojects {
         grid-template-columns: auto auto auto;
     }
-    
-    #portfolio > h2 {
-        grid-column: 1/ span 3;
-    }
-    
-    #portfolio > h3 {
-        grid-column: 1/ span 3;
-    }
-    
-    #kringlan {
-        grid-row: 3;
-        grid-column: 1;
-    }
-    
-    #accelerator {
-        grid-row: 3;
-        grid-column: 2;
-    }
-    
-    #ahouse {
-        grid-row: 3;
-        grid-column: 3;
-    }
-    
     #pegasus {
-        grid-row: 4;
+        grid-row: 2;
         grid-column: 1;
     }
     
     #polhemsgatan {
-        grid-row: 4;
+        grid-row: 2;
         grid-column: 2;
     }
     
     #ringvagen {
-        grid-row: 4;
+        grid-row: 2;
         grid-column: 3;
     }
     
     #sagen {
-        grid-row: 5;
+        grid-row: 3;
         grid-column: 1;
     }
     
     #flygaren {
-        grid-row: 5;
+        grid-row: 3;
         grid-column: 2;
     }
     
     #inrehamnen {
-        grid-row: 5;
+        grid-row: 3;
         grid-column: 3;
     }
     
     #kabeln {
-        grid-row: 6;
+        grid-row: 4;
         grid-column: 1;
     }
     
     #spannmalet {
-        grid-row: 6;
+        grid-row: 4;
         grid-column: 2;
     }
     
     #frosakull {
-        grid-row: 6;
+        grid-row: 4;
         grid-column: 3;
     }
 }
-
 @media (max-width:650px) {
-    #portfolio {
+    #archprojects {
         grid-template-columns: auto auto;
     }
-    
-    #portfolio > h2 {
-        grid-column: 1/ span 2;
-    }
-    
-    #portfolio > h3 {
-        grid-column: 1/ span 2;
-    }
-    
     #ahouse {
-        grid-row: 4;
+        grid-row: 1;
         grid-column: 1;
     }
     
     #pegasus {
-        grid-row: 4;
+        grid-row: 1;
         grid-column: 2;
     }
     
     #polhemsgatan {
-        grid-row: 5;
+        grid-row: 2;
         grid-column: 1;
     }
     
     #ringvagen {
-        grid-row: 5;
+        grid-row: 2;
         grid-column: 2;
     }
     
     #sagen {
-        grid-row: 6;
+        grid-row: 3;
         grid-column: 1;
     }
     
     #flygaren {
-        grid-row: 6;
+        grid-row: 3;
         grid-column: 2;
     }
     
     #inrehamnen {
-        grid-row: 7;
+        grid-row: 4;
         grid-column: 1;
     }
     
     #kabeln {
-        grid-row: 7;
+        grid-row: 4;
         grid-column: 2;
     }
     
     #spannmalet {
-        grid-row: 8;
+        grid-row: 5;
         grid-column: 1;
     }
     
     #frosakull {
-        grid-row: 8;
+        grid-row: 5;
         grid-column: 2;
     }
+}
+
+/*Images*/
+.project-image {
+    position: relative;
 }
 .project-image img {
     width: 12rem;
@@ -486,48 +440,304 @@ p {
     filter: grayscale(40%);
     opacity: 1;
     border-radius: 0.4rem;
+    z-index: 2;
 }
-
 .project-image p {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondcolor);
+    white-space: nowrap;
+    z-index: 1;
+    display: none;
 }
-
-.project-image img:hover {
+.project-image:hover img {
     filter: grayscale(80%);
-    opacity: 1;
-    border: solid var(--thirdcolor);
+    opacity: 0.5;
+    /*Border without moving image
+    box-shadow: 0 0 0 5px var(--thirdcolor);*/
+}
+.project-image:hover p {
+    display: block;
 }
 
-/*-----------------------------------portfolio----------------------------------*/
-footer, #contact div {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+/*DEVELOPMENT*/
+#devprojects {
+    grid-row: 5;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    justify-items: left;
+    gap: 3vw;
+
+}
+.development p {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.development a {
+    margin-top: 10px;
+    padding: 5px 5px 5px 0;
     font-size: 0.8rem;
-    gap: 1rem;
-    padding-bottom: 1rem;
+    color: black;
+}
+.development a:hover {
+    font-weight: bold;
+}
+#dev1 {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 8vw auto;
+    grid-template-columns: auto;
+}
+#dev2 {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 8vw auto;
+    grid-template-columns: auto;
+}
+#dev3 {
+    grid-row: 1;
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 8vw auto;
+    grid-template-columns: auto;
+}
+#dev4 {
+    grid-row: 1;
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 8vw auto;
+    grid-template-columns: auto;
+}
+#dev5 {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 6vw auto;
+    grid-template-columns: auto;
+}
+#dev6 {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 6vw auto;
+    grid-template-columns: auto;
+}
+#dev7 {
+    grid-row: 2;
+    grid-column:3;
+    display: grid;
+    grid-template-rows: 6vw auto;
+    grid-template-columns: auto;
+}
+#dev8 {
+    grid-row: 2;
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 6vw auto;
+    grid-template-columns: auto;
+}
+/*Responsiveness*/
+@media (max-width:1100px) {
+    #dev1 {
+        grid-template-rows: 10vw auto;
+    }
+    #dev2 {
+        grid-template-rows: 10vw auto;
+    }
+    #dev3 {
+        grid-template-rows: 10vw auto;
+    }
+    #dev4 {
+        grid-template-rows: 10vw auto;
+    }
+    #dev5 {
+        grid-template-rows: 8vw auto;
+    }
+    #dev6 {
+        grid-template-rows: 8vw auto;
+    }
+    #dev7 {
+        grid-template-rows: 8vw auto;
+    }
+    #dev8 {
+        grid-template-rows: 8vw auto;
+    }
+}
+@media (max-width:1000px) {
+    #dev1 {
+        grid-template-rows: 12vw auto;
+    }
+    #dev2 {
+        grid-template-rows: 12vw auto;
+    }
+    #dev3 {
+        grid-template-rows: 12vw auto;
+    }
+    #dev4 {
+        grid-template-rows: 12vw auto;
+    }
+}
+@media (max-width:900px) {
+    #dev1 {
+        grid-row: 1;
+        grid-column: 1;
+        grid-template-rows: 11vw auto;
+    }
+    #dev2 {
+        grid-row: 1;
+        grid-column: 2;
+        grid-template-rows: 11vw auto;
+    }
+    #dev3 {
+        grid-row: 1;
+        grid-column: 3;
+        grid-template-rows: 11vw auto;
+    }
+    #dev4 {
+        grid-row: 2;
+        grid-column: 1;
+        grid-template-rows: 12vw auto;
+    }
+    #dev5 {
+        grid-row: 2;
+        grid-column: 2;
+        grid-template-rows: 12vw auto;
+    }
+    #dev6 {
+        grid-row: 2;
+        grid-column: 3;
+        grid-template-rows: 12vw auto;
+    }
+    #dev7 {
+        grid-row: 3;
+        grid-column: 1;
+        grid-template-rows: 10vw auto;
+    }
+    #dev8 {
+        grid-row: 3;
+        grid-column: 2;
+        grid-template-rows: 10vw auto;
+    }
+}
+@media (max-width:800px) {
+    #dev1 {
+        grid-template-rows: 13vw auto;
+    }
+    #dev2 {
+        grid-template-rows: 13vw auto;
+    }
+    #dev3 {
+        grid-template-rows: 13vw auto;
+    }
+}
+@media (max-width:700px) {
+    #dev1 {
+        grid-template-rows: 14vw auto;
+    }
+    #dev2 {
+        grid-template-rows: 14vw auto;
+    }
+    #dev3 {
+        grid-template-rows: 14vw auto;
+    }
+    #dev4 {
+        grid-template-rows: 14vw auto;
+    }
+    #dev5 {
+        grid-template-rows: 14vw auto;
+    }
+    #dev6 {
+        grid-template-rows: 14vw auto;
+    }
+}
+@media (max-width:650px) {
+    #dev1 {
+        grid-row: 1;
+        grid-column: 1;
+        grid-template-rows: 13vw auto;
+    }
+    #dev2 {
+        grid-row: 1;
+        grid-column: 2;
+        grid-template-rows: 13vw auto;
+    }
+    #dev3 {
+        grid-row: 2;
+        grid-column: 1;
+        grid-template-rows: 15vw auto;
+    }
+    #dev4 {
+        grid-row: 2;
+        grid-column: 2;
+        grid-template-rows: 15vw auto;
+    }
+    #dev5 {
+        grid-row: 3;
+        grid-column: 1;
+        grid-template-rows: 11vw auto;
+    }
+    #dev6 {
+        grid-row: 3;
+        grid-column: 2;
+        grid-template-rows: 11vw auto;
+    }
+    #dev7 {
+        grid-row: 4;
+        grid-column: 1;
+        grid-template-rows: 11vw auto;
+    }
+    #dev8 {
+        grid-row: 4;
+        grid-column: 2;
+        grid-template-rows: 11vw auto;
+    }
 }
 
+/*-----------------------------------Contact----------------------------------*/
+#contact div {
+    display: grid;
+    place-items: center;
+    gap: 5px;
+}
+#contact h2 {
+    margin-bottom: 25px;
+}
 #contact div input, #contact div textarea {
-    width: 40%;
-    border-radius: 0.4rem;
+    width: 500px;
+    border: thin solid;
+    border-radius: 0.2rem;
+    padding: 5px;
+    font-family: inherit;
 }
-
 #contact div :nth-child(3) {
     padding: 0.3rem 0rem;
     background-color: white;
+    width: 510px;
 }
-
 #contact div :nth-child(3):hover {
     background-color: var(--thirdcolor);
 }
 
-/* line with socialmedia logos */
-
+/*-----------------------------------Footer----------------------------------*/
+#footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 2vw;
+    gap: 2vw;
+}
 .logo {
     max-height: 1rem;
 }
-
 .logo:hover {
     transform: scale(1.5);
 }
