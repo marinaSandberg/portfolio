@@ -57,7 +57,7 @@ p {
     padding: 0.8rem;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 20vw 20vw auto 20vw 20vw;
+    grid-template-columns: auto auto 20vw auto auto;
     place-items: center;
 }
 #item1 {
