@@ -69,10 +69,12 @@ p {
     grid-column: 2;
 }
 #sitelogo {
-    display: grid;
-    height: 6rem;
     grid-row: 1;
     grid-column: 3;
+}
+#sitelogo img{
+    display: grid;
+    height: 6rem;
 }
 #item3 {
     grid-row: 1;
@@ -84,7 +86,7 @@ p {
 }
 .nav-item a {
     padding: 0.5rem;
-    font-size: 1vw;
+    font-size: 0.7rem;
     color: var(--secondcolor);
 }
 .nav-item a:hover {
@@ -94,6 +96,9 @@ p {
 
 /*Responsiveness*/
 @media (max-width:700px) {
+    .nav-menu {
+        grid-template-columns: auto auto auto auto;
+    }
     #item1 {
         grid-row: 2;
         grid-column: 1;
@@ -105,9 +110,12 @@ p {
     }
     
     #sitelogo {
-        height: 5rem;
         grid-row: 1;
         grid-column: 1/ span 4;
+    }
+
+    #sitelogo img{
+        height: 5rem;
     }
     
     #item3 {
@@ -118,10 +126,6 @@ p {
     #item4 {
         grid-row: 2;
         grid-column: 4;
-    }
-
-    .nav-item a {
-        font-size: 2vw;
     }
 }
 
