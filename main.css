@@ -75,6 +75,7 @@ p {
 #sitelogo img{
     display: grid;
     height: 6rem;
+    width: 14rem;
 }
 #item3 {
     grid-row: 1;
@@ -151,12 +152,12 @@ p {
     grid-column: 1;
 }
 #home-image {
+    width: 24vw;
+    height: 50vw;
     grid-row: 1;
     grid-column: 2;
 }
-#home-image img {
-    width: 24vw;
-}
+
 #role-item2 {
     grid-row: 1;
     grid-column: 3;
@@ -752,7 +753,8 @@ p {
     gap: 2vw;
 }
 .logo {
-    max-height: 1rem;
+    height: 1rem;
+    width: 1rem;
 }
 .logo:hover {
     transform: scale(1.5);
