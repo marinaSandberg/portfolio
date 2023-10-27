@@ -19,7 +19,7 @@ html {
 
 body {
     margin: 1rem;
-    font-family: existence, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: var(--firstcolor);
 }
 
@@ -87,11 +87,12 @@ p {
 .nav-item a {
     padding: 0.5rem;
     font-size: 0.7rem;
+    font-weight: 300;
     color: var(--secondcolor);
 }
 .nav-item a:hover {
     color: var(--thirdcolor);
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 /*Responsiveness*/
@@ -150,7 +151,7 @@ p {
     grid-column: 1;
 }
 #home-image {
-    max-height: 70vw;
+    min-width: 25vw;
     grid-row: 1;
     grid-column: 2;
 }
