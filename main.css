@@ -151,7 +151,7 @@ p {
     grid-column: 1;
 }
 #home-image {
-    min-width: 25vw;
+    width: 24vw;
     grid-row: 1;
     grid-column: 2;
 }
