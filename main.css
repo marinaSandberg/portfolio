@@ -151,9 +151,11 @@ p {
     grid-column: 1;
 }
 #home-image {
-    width: 24vw;
     grid-row: 1;
     grid-column: 2;
+}
+#home-image img {
+    width: 24vw;
 }
 #role-item2 {
     grid-row: 1;
